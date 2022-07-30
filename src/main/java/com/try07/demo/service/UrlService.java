@@ -1,14 +1,14 @@
-package com.try08.demo.service;
+package com.try07.demo.service;
 
-import com.try08.demo.entity.Url;
-import com.try08.demo.repository.UrlRepository;
+import com.try07.demo.entity.Url;
+import com.try07.demo.repository.UrlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 
-import static com.try08.demo.logic.Encoder.getShortUrl;
-import static com.try08.demo.logic.ValidationCheck.isValid;
+import static com.try07.demo.logic.Encoder.getShortUrl;
+import static com.try07.demo.logic.ValidationCheck.isValid;
 
 @Service
 public class UrlService {

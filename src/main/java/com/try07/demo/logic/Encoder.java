@@ -1,4 +1,4 @@
-package com.try08.demo.logic;
+package com.try07.demo.logic;
 import java.util.Random;
 
 public class Encoder {

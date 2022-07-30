@@ -1,6 +1,6 @@
-package com.try08.demo.repository;
-import com.try08.demo.logic.Encoder;
-import com.try08.demo.entity.Url;
+package com.try07.demo.repository;
+import com.try07.demo.logic.Encoder;
+import com.try07.demo.entity.Url;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

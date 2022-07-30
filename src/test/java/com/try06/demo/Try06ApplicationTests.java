@@ -1,10 +1,10 @@
-package com.try08.demo;
+package com.try06.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Try08ApplicationTests {
+class Try06ApplicationTests {
 
 	@Test
 	void contextLoads() {

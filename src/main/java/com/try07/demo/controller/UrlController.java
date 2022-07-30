@@ -1,8 +1,9 @@
-package com.try08.demo.controller;
+package com.try07.demo.controller;
 
-import com.try08.demo.entity.Url;
-import com.try08.demo.service.UrlService;
+import com.try07.demo.entity.Url;
+import com.try07.demo.service.UrlService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,6 +17,7 @@ public class UrlController {
             private urlService urlservice里 urlservice是属性名
      */
     private UrlService urlService;
+    private RedisTemplate redisTemplate;
 
     @GetMapping("/{id}")
     public String getLong_Url(@PathVariable String id){

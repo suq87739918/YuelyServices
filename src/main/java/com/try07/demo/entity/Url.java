@@ -1,4 +1,4 @@
-package com.try08.demo.entity;
+package com.try07.demo.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
