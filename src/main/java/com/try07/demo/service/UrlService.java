@@ -62,9 +62,9 @@ public class UrlService implements UrlServiceInterface{
             System.out.println("short url is in the cache already");
             return short_url;
         }
-        if (urlRepository.findByLong_url(long_url) != null){
-            Url longtoshort = urlRepository.findByLong_url(long_url);
-            String short_url = longtoshort.getShort_url();
+        if (urlRepository.findByLongUrl(long_url) != null){
+            Url longtoshortTemp = urlRepository.findByLongUrl(long_url);
+            String short_url = longtoshortTemp.getShort_url();
             saveLongAndShort(long_url, short_url);
             return short_url;
         }
@@ -86,7 +86,7 @@ public class UrlService implements UrlServiceInterface{
             System.out.println("long url is in the cache already");
             return long_url;
         }
-        Url longtoshort = urlRepository.findByShort_url(short_url);
+        Url longtoshort = urlRepository.findByShortUrl(short_url);
         System.out.println("long url is in the database");
         String long_url = longtoshort.getLong_url();
         saveLongAndShort(long_url,short_url);

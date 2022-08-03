@@ -12,6 +12,6 @@ public interface UrlRepository extends JpaRepository<Url,Integer> {
     //三元运算符，动态拼接
     //nativeQuery = true: 可以执行原生sql语句，所谓原生sql，也就是说这段sql拷贝到数据库中，然后把参数值给一下就能运行
     //String findByShortUrl(String id); //从Url处继承自定义接口
-    Url findByLong_url(String long_url);
-    Url findByShort_url(String short_url);
+    Url findByLongUrl(String long_url);
+    Url findByShortUrl(String short_url);
 }
