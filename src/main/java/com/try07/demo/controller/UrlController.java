@@ -1,7 +1,7 @@
 package com.try07.demo.controller;
 
-import com.try07.demo.entity.Url;
 import com.try07.demo.service.UrlService;
+import com.try07.demo.config.RedisConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +25,7 @@ public class UrlController {
     }
 
     @PostMapping
-    public Url getShort_Url(@RequestBody String url){
+    public String getShort_Url(@RequestBody String url){
         return urlService.getShort_Url(url);
     }
 }

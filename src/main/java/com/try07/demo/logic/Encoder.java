@@ -17,6 +17,5 @@ public class Encoder {
         String url_shorted = str.toString();
         String shortUrl = "http://localhost:8080/shortener/" + url_shorted;
         return shortUrl;
-
     }
 }

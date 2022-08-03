@@ -17,7 +17,7 @@ public class Url {
     private int id;
     //private String created_at;
     @Column(name = "short_url")
-    private String shorturl;
+    private String short_url;
     @Column(name = "long_url")
     private String long_url;
 }
