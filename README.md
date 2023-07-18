@@ -7,7 +7,7 @@ This project is a URL shortener service, similar in functionality to bitly.com. 
 1. **Language:** Java
 2. **Framework:** Spring Boot
 3. **Database:** MySQL, Redis
-4. **Database Version Control:** 
+4. **Database Version Control:** Flyway
 5. **API:** RESTful
 
 ## Features
